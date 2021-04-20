@@ -23,7 +23,7 @@ console.log(students.isAdult)
 students[42] = "The answer to the meaning of life"
 
 // 9. Using `console.log` print the value of key `42` from the `students` object
-console.log(students["42"])
+console.log(students[42])
 
 // 10. Check the length of object named `students`.
 console.log(students.length)
@@ -33,11 +33,12 @@ console.log(students.length)
 Ans :-
 Yes, we can define because in JavaScript the objec understands that a 'let' or 'var' keyword will become strings when we define so we can use it.
 ```
+students["let"] = "Any Value"
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
-students.isAdult
+console.log(students)
 delete students.isAdult
-students.isAdult
+console.log(students)
 
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
 students.batch = 18
