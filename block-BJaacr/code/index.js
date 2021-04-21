@@ -19,28 +19,52 @@ Hint: (Structure of got variable)
 */
 
 // 1. Log the value of key "houses"
+console.log(got.houses)
 
 // 2. Log the length of the "houses" key
+console.log(got.houses.length)
 
 // 3. Log the name of all houses in got one by one
+for(let name of got.houses){
+  console.log(name["name"])
+}
 
 // 4. Log the name of all the people in house Starks (index 0) one by one
+for(let house of got.houses){
+  for(let name of house){
+    console.log(name)
+  
+}
 
 // 5. Log the name of all the people in house Lannisters (index 1) one by one
-
+// for(let name )
 // 6. Log the description of all the people in house Lannisters (index 1) one by one
+// console.log(got.houses[houses.length[1].people.description])
 
 // 7. Log the name and description of all the people in house Lannisters (index 1) one by one like `I am [name] and my bio is [description]`
+// console.log(`I am ${got.houses[houses.length[1].people.name]} and my bio is ${got.houses[houses.length[1].people.description]}`)
 
 // 8. Log the name and description of all the people in house Starks (index 0) one by one like `I am [name] and my bio is [description]`
+// console.log(`I am ${got.houses[houses.length[0].people.name]} and my bio is ${got.houses[houses.length[0].people.description]}`)
 
 // 9. Log the name and description of the people in house Starks whose name is `Robb Stark`
+// if(got.houses[houses.length[0]].people.name === "Robb Stark"){
+//   console.log(`I am ${got.houses[houses.length[0].people.name]} and my bio is ${got.houses[houses.length[0].people.description]}`)
+
+// }
 
 // 10. Log the name and description of the people in house Lannisters whose name is `Tywin Lannister`
+// if(got.houses[houses.length[1]].people.name === "Tywin Lannister"){
+//   console.log(`I am ${got.houses[houses.length[1].people.name]} and my bio is ${got.houses[houses.length[1].people.description]}`)
+
+// }
 
 // 11. Push the name of the houses in an array named `houseNames` and Log the array
+// let houseNames = got.houses.name
+// console.log(houseNames)
 
 // 12. Log the size of people in Starks house
+// console.log(got.houses.p)
 
 // 13. Log the size of people in Lannisters house
 
