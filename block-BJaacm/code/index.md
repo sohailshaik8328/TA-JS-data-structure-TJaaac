@@ -15,21 +15,22 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![memory_representation_screenshot](./hello.jpg)
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true because both the  and user is assigned with newUser
+- `user === newUser;` // true because both the  and user is assigned with newUser
+- `user.name === newUser.name;` // true because both the  and user is assigned with newUser
+- `user.name == newUser.name;` // true because both the  and user is assigned with newUser
+- `user.sibling == newUser.sibling;` // true because both the  and user is assigned with newUser
+- `user.sibling === newUser.sibling;` // true because both the  and user is assigned with newUser
+- `user.sibling == allBrothers;` // false because user is an non-primitive and they are different like on is an object and another one is an array
+- `user.sibling === allBrothers;` // false because user is an non-primitive and they are different like on is an object and another one is an array
+- `brothersCopy === allBrothers;` // false because user is an non-primitive and they are different like on is an object and another one is an array
+- `brothersCopy == allBrothers;` // false because user is an non-primitive and they are different like on is an object and another one is an array
+- `brothersCopy == user.sibling;` // true because user.sibling is stored in a variable called brothersCopy
+- `brothersCopy === user.sibling;` // true because user.sibling is stored in a variable called brothersCopy
+- `brothersCopy[0] === user.sibling[0];` // true because user.sibling is stored in a variable called brothersCopy
+- `brothersCopy[1] === user.sibling[1];` // true because user.sibling is stored in a variable called brothersCopy
+- `user.sibling[1] === newUser.sibling[1];` // true because user.sibling is stored in a variable called brothersCopy
