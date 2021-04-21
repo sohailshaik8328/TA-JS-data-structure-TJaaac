@@ -25,6 +25,7 @@ Answer the following with reason after going through the above code:
 
 <!-- To add this image here use ![name](./hello.jpg) -->
 
+
 ```js
 function personDetails(person) {
   person.age = 25;
@@ -33,8 +34,10 @@ function personDetails(person) {
 }
 var person1 = { name: 'Alex', age: 30 };
 var person2 = personDetails(person1);
-console.log(person1);
-console.log(person2);
+console.log(person1); // { name: 'Alex', age: 25 };
+// Here person1 will be executed first and after that it will execute person2. Since, it has the value of the function it will go to the function and access the data inside the function in that way the person1 age will get updated to 25
+console.log(person2); // person = { name: 'John', age: 50 };
+// Here since the person2 has been calling the function called personDetails. We are returning the person variable and it will get executed to person2 
 ```
 
 3. What will be the output of the below code:
@@ -46,6 +49,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //1. true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
